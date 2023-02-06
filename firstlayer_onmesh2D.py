@@ -184,7 +184,7 @@ fig = plt.figure()
 plt.plot(gx,gy)
 plt.plot(xb,yb , linewidth=0.1, marker='o',markersize=2)
 plt.plot(np.transpose(xb), np.transpose(yb), linewidth=0.1)
-plt.title('Klipper´s bed mesh grid & Z height nodes\n', fontweight ="bold")
+plt.title('Klipper´s bed mesh grid & Z height nodes [mm]\n', fontweight ="bold")
 plt.xlabel('X-FRONT',fontsize =12)
 plt.ylabel('Y-LEFT',fontsize =12)
 
