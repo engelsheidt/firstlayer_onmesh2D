@@ -90,7 +90,7 @@ for line in f:
         j=0
         
         for i in buf.split(','):
-            gj=float(i)
+            gj=round(float(i),3)
             zb[u,j]=gj
             j+=1
             
