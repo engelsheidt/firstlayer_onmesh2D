@@ -90,8 +90,7 @@ for line in f:
         j=0
         
         for i in buf.split(','):
-            gj=round(float(i),3)
-            zb[u,j]=gj
+            zb[u,j]=i
             j+=1
             
         u+=1
@@ -193,7 +192,7 @@ plt.ylabel('Y-LEFT',fontsize =12)
 
 for j in range (mesh_y):
     for i in range(mesh_x):
-        plt.text(xb[i,j], yb[i,j], str(zb[i,j]), color='black',fontsize =14)
+        plt.text(xb[i,j], yb[i,j], zb[i,j], color='black',fontsize =14)
 #fig.canvas.manager.full_screen_toggle()
 plt.show()
 
